@@ -1,0 +1,42 @@
+{
+  "tool": "jekyll",
+  "paths": {
+    "resources": "resources",
+    "pages": "pages",
+    "temp": "temp",
+    "qa": "qa",
+    "output": "output",
+    "txCache": "txCache",
+    "specification": "http://build.fhir.org"
+  },
+  "npm-name": "hl7.fhir.test.ig40eh",
+  "license": "CC0-1.0",
+  "canonicalBase": "http://www.fhir.org/guides/test40",
+  "version": "4.0.0",
+  "sct-edition": "http://snomed.info/sct/900000000000207008",
+  "defaults": {
+    "Any": {
+      "template-format": "format.html",
+      "template-base": "base.html"
+    },
+    "CodeSystem": {
+      "template-base": "cs.html"
+    },
+    "ValueSet": {
+      "template-base": "vs.html"
+    },
+    "ConceptMap": {
+      "template-base": "cm.html"
+    },
+    "StructureDefinition": {
+      "template-base": "sd.html"
+    }
+  },
+  "source": "ig.xml",
+  "resources": {
+    "StructureDefinition/template-basic": {
+      "defns": "StructureDefinition-template-basic.html",
+      "base": "StructureDefinition-template-basic.html"
+    }
+  }
+}

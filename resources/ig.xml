@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="ig"/>
+  <url value="http://www.fhir.org/guides/test40/ImplementationGuide/ig"/>
+  <name value="Barebones Implementation Guide Template"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <publisher value="FHIR Project"/>
+  <packageId value="hl7.fhir.test.ig40eh"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.0"/>
+  <definition>
+    <grouping id="p1">
+      <name value="base"/>
+    </grouping>
+    <resource>  <!-- 1..* Resource in the implementation guide -->
+   <reference> <!-- 1..1 Reference(Any) Location of the resource -->
+     <reference value="StructureDefinition/template-basic"/><!-- ?? 0..1 Literal reference, Relative, internal or absolute URL -->
+   </reference>
+   <name value="Barebones Basic Template"/><!-- 0..1 Human Name for the resource -->
+   <exampleBoolean value = "false"/><!-- 0..1 boolean|canonical(StructureDefinition) Is an example/What is this an example of? -->
+  </resource>
+    <page>
+      <nameUrl value="index.html"/>
+      <title value="Home Page"/>
+      <generation value="html"/>
+    </page>
+    <parameter>
+      <code value="generate-json"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="generate-xml"/>
+      <value value="true"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

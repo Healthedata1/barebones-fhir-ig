@@ -1,0 +1,51 @@
+{
+  "resourceType" : "ImplementationGuide",
+  "id" : "ig",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "/Users/ehaas/Documents/FHIR/barebones-ig/resources"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "/Users/ehaas/Documents/FHIR/barebones-ig/pages"
+  }],
+  "url" : "http://www.fhir.org/guides/test40/ImplementationGuide/ig",
+  "name" : "Barebones Implementation Guide Template",
+  "status" : "draft",
+  "experimental" : true,
+  "publisher" : "FHIR Project",
+  "packageId" : "hl7.fhir.test.ig40eh",
+  "license" : "CC0-1.0",
+  "fhirVersion" : ["4.0.0",
+  "4.0.0"],
+  "definition" : {
+    "grouping" : [{
+      "id" : "p1",
+      "name" : "base"
+    }],
+    "resource" : [{
+      "reference" : {
+        "reference" : "StructureDefinition/template-basic"
+      },
+      "name" : "Barebones Basic Template",
+      "exampleBoolean" : false
+    }],
+    "page" : {
+      "nameUrl" : "index.html",
+      "title" : "Home Page",
+      "generation" : "html"
+    },
+    "parameter" : [{
+      "code" : "generate-json",
+      "value" : "true"
+    },
+    {
+      "code" : "generate-xml",
+      "value" : "true"
+    },
+    {
+      "code" : "generate-turtle",
+      "value" : "true"
+    }]
+  }
+}

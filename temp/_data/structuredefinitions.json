@@ -1,0 +1,15 @@
+﻿{
+  "template-basic": {
+    "index": 0,
+    "url": "http://www.fhir.org/guides/test40/StructureDefinition/template-basic",
+    "name": "template-basic",
+    "path": "StructureDefinition-template-basic.html",
+    "kind": "resource",
+    "type": "Basic",
+    "base": "http://hl7.org/fhir/StructureDefinition/Basic",
+    "basename": "Basic",
+    "basepath": "http://build.fhir.org/basic.html",
+    "status": "active",
+    "date": "Wed Feb 15 00:00:00 PST 2017"
+  }
+}

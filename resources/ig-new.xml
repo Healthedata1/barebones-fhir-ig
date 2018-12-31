@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="ig"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
+    <valueString value="/Users/ehaas/Documents/FHIR/barebones-ig/resources"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
+    <valueString value="/Users/ehaas/Documents/FHIR/barebones-ig/pages"/>
+  </extension>
+  <url value="http://www.fhir.org/guides/test40/ImplementationGuide/ig"/>
+  <name value="Barebones Implementation Guide Template"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <publisher value="FHIR Project"/>
+  <packageId value="hl7.fhir.test.ig40eh"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.0"/>
+  <fhirVersion value="4.0.0"/>
+  <definition>
+    <grouping id="p1">
+      <name value="base"/>
+    </grouping>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/template-basic"/>
+      </reference>
+      <name value="Barebones Basic Template"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <page>
+      <nameUrl value="index.html"/>
+      <title value="Home Page"/>
+      <generation value="html"/>
+    </page>
+    <parameter>
+      <code value="generate-json"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="generate-xml"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="generate-turtle"/>
+      <value value="true"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

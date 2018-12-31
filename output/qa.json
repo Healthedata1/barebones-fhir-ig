@@ -1,0 +1,11 @@
+﻿{
+  "url": "http://www.fhir.org/guides/test40/ImplementationGuide/ig",
+  "name": "Barebones Implementation Guide Template",
+  "package-id": "hl7.fhir.test.ig40eh",
+  "date": "Mon, 31 Dec, 2018 10:22:54 -0800",
+  "errs": 4,
+  "warnings": 6,
+  "hints": 0,
+  "version": "4.0.0",
+  "tool": "4.0.0 (3)"
+}

@@ -1,0 +1,79 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "template-basic",
+  "url": "http://www.fhir.org/guides/test40/StructureDefinition/template-basic",
+  "version": "0.0.0",
+  "name": "template-basic",
+  "title": "Health eData Template Profile",
+  "status": "active",
+  "date": "2017-02-15",
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Basic",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Basic",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Basic",
+        "path": "Basic",
+        "mustSupport": false,
+        "isModifier": false
+      },
+      {
+        "id": "Basic.identifier",
+        "path": "Basic.identifier",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ],
+        "mustSupport": true,
+        "isModifier": false
+      },
+      {
+        "id": "Basic.code",
+        "path": "Basic.code",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false
+      },
+      {
+        "id": "Basic.code.coding",
+        "path": "Basic.code.coding",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mustSupport": true,
+        "isModifier": false
+      },
+      {
+        "id": "Basic.code.coding.code",
+        "path": "Basic.code.coding.code",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "fixedCode": "diet",
+        "mustSupport": true,
+        "isModifier": false
+      }
+    ]
+  }
+}

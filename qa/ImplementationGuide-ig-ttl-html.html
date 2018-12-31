@@ -1,0 +1,69 @@
+﻿<html>
+<head>
+  <title>ImplementationGuide-ig-ttl-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="rdf">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:ImplementationGuide;
+  <a href="http://build.fhir.org/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;ig&quot;];
+  <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.text">fhir:DomainResource.text</a> [
+     <a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;Barebones Implementation Guide Template&lt;/h2&gt;&lt;p&gt;The official URL for this implementation guide is: &lt;/p&gt;&lt;pre&gt;http://www.fhir.org/guides/test40/ImplementationGuide/ig&lt;/pre&gt;&lt;/div&gt;&quot;
+  ];
+  <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.url">fhir:ImplementationGuide.url</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://www.fhir.org/guides/test40/ImplementationGuide/ig&quot;];
+  <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.name">fhir:ImplementationGuide.name</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Barebones Implementation Guide Template&quot;];
+  <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.status">fhir:ImplementationGuide.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;draft&quot;];
+  <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.experimental">fhir:ImplementationGuide.experimental</a> [ <a href="http://build.fhir.org/datatypes.html#boolean">fhir:value</a> &quot;true&quot;^^xsd:boolean];
+  <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.publisher">fhir:ImplementationGuide.publisher</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;FHIR Project&quot;];
+  <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.packageId">fhir:ImplementationGuide.packageId</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;hl7.fhir.test.ig40eh&quot;];
+  <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.license">fhir:ImplementationGuide.license</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;CC0-1.0&quot;];
+  <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.fhirVersion">fhir:ImplementationGuide.fhirVersion</a> [
+     <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;4.0.0&quot;;
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0
+  ];
+  <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition">fhir:ImplementationGuide.definition</a> [
+     <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.grouping">fhir:ImplementationGuide.definition.grouping</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.grouping.id">fhir:Element.id</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;p1&quot; ];
+       <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.grouping.name">fhir:ImplementationGuide.definition.grouping.name</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;base&quot; ]     ];
+     <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource">fhir:ImplementationGuide.definition.resource</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">fhir:Element.extension</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/datatypes.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/implementationguide-page&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">fhir:Extension.valueUri</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;StructureDefinition-template-basic.html&quot; ]       ];
+       <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">fhir:ImplementationGuide.definition.resource.reference</a> [
+         <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;StructureDefinition/template-basic&quot; ]       ];
+       <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.name">fhir:ImplementationGuide.definition.resource.name</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Barebones Basic Template&quot; ];
+       <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">fhir:ImplementationGuide.definition.resource.exampleBoolean</a> [ <a href="http://build.fhir.org/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean ]     ];
+     <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page">fhir:ImplementationGuide.definition.page</a> [
+       <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">fhir:ImplementationGuide.definition.page.nameUrl</a> [ <a href="http://build.fhir.org/datatypes.html#url">fhir:value</a> &quot;index.html&quot; ];
+       <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">fhir:ImplementationGuide.definition.page.title</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Home Page&quot; ];
+       <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">fhir:ImplementationGuide.definition.page.generation</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;html&quot; ]     ];
+     <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.parameter">fhir:ImplementationGuide.definition.parameter</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.parameter.code">fhir:ImplementationGuide.definition.parameter.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generate-json&quot; ];
+       <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.parameter.value">fhir:ImplementationGuide.definition.parameter.value</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;true&quot; ]     ], [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
+       <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.parameter.code">fhir:ImplementationGuide.definition.parameter.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generate-xml&quot; ];
+       <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.parameter.value">fhir:ImplementationGuide.definition.parameter.value</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;true&quot; ]     ]
+  ].
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
+
+</pre>
+
+</body>
+</html>

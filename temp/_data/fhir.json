@@ -1,0 +1,25 @@
+﻿{
+  "path": "http://build.fhir.org/",
+  "canonical": "http://www.fhir.org/guides/test40",
+  "igId": "ig",
+  "igName": "Barebones Implementation Guide Template",
+  "errorCount": 2,
+  "version": "4.0.0",
+  "revision": "193d9011",
+  "versionFull": "4.0.0-193d9011",
+  "toolingVersion": "4.0.0",
+  "toolingRevision": "3",
+  "toolingVersionFull": "4.0.0 (3)",
+  "totalFiles": 2,
+  "processedFiles": 13,
+  "genDate": "Mon, Dec 31, 2018 10:22-0800",
+  "ig": {
+    "id": "ig",
+    "name": "Barebones Implementation Guide Template",
+    "url": "http://www.fhir.org/guides/test40/ImplementationGuide/ig",
+    "status": "draft",
+    "experimental": true,
+    "publisher": "FHIR Project",
+    "fhirVersion": "4.0.0"
+  }
+}

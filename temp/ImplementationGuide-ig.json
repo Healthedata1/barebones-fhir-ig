@@ -1,0 +1,56 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "ig",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Barebones Implementation Guide Template</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test40/ImplementationGuide/ig</pre></div>"
+  },
+  "url": "http://www.fhir.org/guides/test40/ImplementationGuide/ig",
+  "name": "Barebones Implementation Guide Template",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "FHIR Project",
+  "packageId": "hl7.fhir.test.ig40eh",
+  "license": "CC0-1.0",
+  "fhirVersion": [
+    "4.0.0"
+  ],
+  "definition": {
+    "grouping": [
+      {
+        "id": "p1",
+        "name": "base"
+      }
+    ],
+    "resource": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-template-basic.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/template-basic"
+        },
+        "name": "Barebones Basic Template",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "index.html",
+      "title": "Home Page",
+      "generation": "html"
+    },
+    "parameter": [
+      {
+        "code": "generate-json",
+        "value": "true"
+      },
+      {
+        "code": "generate-xml",
+        "value": "true"
+      }
+    ]
+  }
+}

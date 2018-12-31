@@ -1,0 +1,38 @@
+﻿Barebones Implementation Guide Template : Validation Results
+=========================================
+
+err = 4, warn = 6, info = 0
+Generated Mon Dec 31 10:23:08 PST 2018. FHIR version 4.0.0 for 4.0.0
+
+ Build Errors : 20 / 0
+ /Users/ehaas/Documents/FHIR/barebones-ig/resources/ig : 0 / 1
+ /Users/ehaas/Documents/FHIR/barebones-ig/resources/structuredefinition-template-basic : 2 / 2
+</table>
+== n/a ==
+ERROR: /Users/ehaas/Documents/FHIR/barebones-ig/output/StructureDefinition-template-basic.json.html#/html/head/meta/body/div/div/div/p/a at Line 1059, column 18: The link '../license.html' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/barebones-ig/output/StructureDefinition-template-basic.json.html#/html/head/meta/body/div/div/div/p/a/img at Line 1059, column 81: The image source '../cc0.png' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/barebones-ig/output/ImplementationGuide-ig.xml.html#/html/head/meta/body/div/div/div/p/a at Line 93, column 18: The link '../license.html' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/barebones-ig/output/ImplementationGuide-ig.xml.html#/html/head/meta/body/div/div/div/p/a/img at Line 93, column 81: The image source '../cc0.png' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/barebones-ig/output/ImplementationGuide-ig.json.html#/html/head/meta/body/div/div/div/p/a at Line 104, column 18: The link '../license.html' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/barebones-ig/output/ImplementationGuide-ig.json.html#/html/head/meta/body/div/div/div/p/a/img at Line 104, column 81: The image source '../cc0.png' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/barebones-ig/output/index.html#/html/head/meta/body/div/div/div/p/a at Line 50, column 18: The link '../license.html' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/barebones-ig/output/index.html#/html/head/meta/body/div/div/div/p/a/img at Line 50, column 81: The image source '../cc0.png' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/barebones-ig/output/ImplementationGuide-ig.ttl.html#/html/head/meta/body/div/div/div/p/a at Line 108, column 18: The link '../license.html' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/barebones-ig/output/ImplementationGuide-ig.ttl.html#/html/head/meta/body/div/div/div/p/a/img at Line 108, column 81: The image source '../cc0.png' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/barebones-ig/output/ImplementationGuide-ig.html#/html/head/meta/body/div/div/div/p/a at Line 51, column 18: The link '../license.html' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/barebones-ig/output/ImplementationGuide-ig.html#/html/head/meta/body/div/div/div/p/a/img at Line 51, column 81: The image source '../cc0.png' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/barebones-ig/output/StructureDefinition-template-basic.html#/html/head/meta/body/div/div/div/div/div/span/a at Line 114, column 395: The link 'http://build.fhir.org/null.html' for "Language of the resource content" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/barebones-ig/output/StructureDefinition-template-basic.html#/html/head/meta/body/div/div/div/div/div/span/a at Line 120, column 447: The link 'http://build.fhir.org/null.html' for "Kind of Resource" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/barebones-ig/output/StructureDefinition-template-basic.html#/html/head/meta/body/div/div/div/p/a at Line 3214, column 18: The link '../license.html' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/barebones-ig/output/StructureDefinition-template-basic.html#/html/head/meta/body/div/div/div/p/a/img at Line 3214, column 81: The image source '../cc0.png' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/barebones-ig/output/StructureDefinition-template-basic.ttl.html#/html/head/meta/body/div/div/div/p/a at Line 890, column 18: The link '../license.html' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/barebones-ig/output/StructureDefinition-template-basic.ttl.html#/html/head/meta/body/div/div/div/p/a/img at Line 890, column 81: The image source '../cc0.png' cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/barebones-ig/output/StructureDefinition-template-basic.xml.html#/html/head/meta/body/div/div/div/p/a at Line 958, column 18: The link '../license.html' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/barebones-ig/output/StructureDefinition-template-basic.xml.html#/html/head/meta/body/div/div/div/p/a/img at Line 958, column 81: The image source '../cc0.png' cannot be resolved
+== /Users/ehaas/Documents/FHIR/barebones-ig/resources/ig.xml ==
+WARNING: ImplementationGuide/ig: ImplementationGuide: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
+== /Users/ehaas/Documents/FHIR/barebones-ig/resources/StructureDefinition-template-basic.json ==
+WARNING: StructureDefinition/template-basic: StructureDefinition: A resource should have narrative for robust management [text.div.exists()]
+WARNING: StructureDefinition/template-basic: StructureDefinition: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
+ERROR: template-basic: missing Snapshot at template-basic.template-basic
+ERROR: template-basic: A snapshot is required

@@ -1,0 +1,111 @@
+﻿<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>??</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link rel="stylesheet" href="fhir.css"/>
+
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <link rel="stylesheet" href="css/bootstrap-fhir.css"/>
+  <link rel="stylesheet" href="css/project.css"/>
+
+
+<body>
+
+<div id="segment-content" class="segment">    <!-- segment-content -->
+<div class="container">    <!-- container -->
+<div class="row">
+<div class="inner-wrapper">
+<div class="col-9">
+
+<a href="index.html">Home</a>
+
+
+<h2>Barebones Implementation Guide Template</h2>
+
+<pre class="xml">
+
+&lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide">ImplementationGuide</a> xmlns="http://hl7.org/fhir"&gt;
+  &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.id">id</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>="ig"/&gt;
+  &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.text">text</a>&gt;
+    &lt;<a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="generated"/&gt;
+    &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;h2&gt;Barebones Implementation Guide Template&lt;/h2&gt;&lt;p&gt;The official URL for this implementation guide is: &lt;/p&gt;&lt;pre&gt;http://www.fhir.org/guides/test40/ImplementationGuide/ig&lt;/pre&gt;&lt;/div&gt;
+  &lt;/text&gt;
+  &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.url">url</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>="http://www.fhir.org/guides/test40/ImplementationGuide/ig"/&gt;
+  &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.name">name</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="Barebones Implementation Guide Template"/&gt;
+  &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="draft"/&gt;
+  &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.experimental">experimental</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>="true"/&gt;
+  &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.publisher">publisher</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="FHIR Project"/&gt;
+  &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.packageId">packageId</a> <a href="http://build.fhir.org/datatypes.html#id">value</a>="hl7.fhir.test.ig40eh"/&gt;
+  &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.license">license</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="CC0-1.0"/&gt;
+  &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.fhirVersion">fhirVersion</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="4.0.0"/&gt;
+  &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition">definition</a>&gt;
+    &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.grouping">grouping</a> <a href="http://build.fhir.org/datatypes.html#string">id</a>="p1"&gt;
+      &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.grouping.name">name</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="base"/&gt;
+    &lt;/grouping&gt;
+    &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource">resource</a>&gt;
+      &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>
+                 <a href="http://build.fhir.org/datatypes.html#string">url</a>="http://hl7.org/fhir/StructureDefinition/implementationguide-page"&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Extension#Extension.value[x]">valueUri</a> <a href="http://build.fhir.org/datatypes.html#uri">value</a>="StructureDefinition-template-basic.html"/&gt;
+      &lt;/extension&gt;
+      &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>&gt;
+        &lt;<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="StructureDefinition/template-basic"/&gt;
+      &lt;/reference&gt;
+      &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.name">name</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="Barebones Basic Template"/&gt;
+      &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a> <a href="http://build.fhir.org/datatypes.html#boolean">value</a>="false"/&gt;
+    &lt;/resource&gt;
+    &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page">page</a>&gt;
+      &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a> <a href="http://build.fhir.org/datatypes.html#url">value</a>="index.html"/&gt;
+      &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="Home Page"/&gt;
+      &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="html"/&gt;
+    &lt;/page&gt;
+    &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.parameter">parameter</a>&gt;
+      &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.parameter.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="generate-json"/&gt;
+      &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.parameter.value">value</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="true"/&gt;
+    &lt;/parameter&gt;
+    &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.parameter">parameter</a>&gt;
+      &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.parameter.code">code</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>="generate-xml"/&gt;
+      &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.parameter.value">value</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>="true"/&gt;
+    &lt;/parameter&gt;
+  &lt;/definition&gt;
+&lt;/ImplementationGuide&gt;</pre>
+
+
+
+</div>
+
+    </div>    <!-- /inner-wrapper -->
+            </div>    <!-- /row -->
+        </div>    <!-- /container -->
+
+    </div>    <!-- /segment-content -->
+
+
+<div id="segment-footer" class="segment">    <!-- segment-footer -->
+  <div class="container">    <!-- container -->
+   <div class="inner-wrapper">
+    <p><a name="8cd9db26-5cdc-42d2-87fb-73b444ab7621">​</a>
+        &copy; Test IG. FHIR STU3 Candidate (v) generated on . |
+               <a rel="license" style="color: #81BEF7" href="../license.html"><a name="8ad9d37a-2419-4e73-a7fc-bd3dbfbc7154">​</a><img src="../cc0.png" alt="CC0" style="border-style: none;"/></a> 
+        
+        </p>
+   </div>    <!-- /inner-wrapper -->
+  </div>    <!-- /container -->
+ </div>    <!-- /segment-footer -->
+    <!-- disqus thread -->
+    <!-- disqus -->
+    <!-- end disqus -->
+
+ <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+  <div class="container">    <!-- container -->
+  </div>    <!-- /container -->
+ </div>    <!-- /segment-post-footer -->
+
+</body>
+
+
+</meta></head></html>
